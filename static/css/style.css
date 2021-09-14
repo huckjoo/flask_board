@@ -1,0 +1,16 @@
+.title {
+  text-align: center;
+}
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 300px;
+  margin: auto;
+}
+.board__description {
+  margin: 10px 0px;
+}
+.board__writer {
+  margin-bottom: 10px;
+}

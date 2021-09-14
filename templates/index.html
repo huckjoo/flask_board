@@ -1,8 +1,15 @@
 {% extends "layout.html" %} {% block body %}
-<h1>게시판</h1>
-<form>
-  <input type="text" placeholder="제목" />
-  <input type="textarea" placeholder="내용" />
+<h1 class="title">게시판</h1>
+<form class="board" method="POST">
+  <input class="board__title" name="title" type="text" placeholder="제목" />
+  <textarea
+    class="board__description"
+    name="description"
+    cols="40"
+    rows="10"
+    placeholder="내용"
+  ></textarea>
+  <input class="board__writer" name="writer" type="text" placeholder="작성자" />
   <input type="submit" />
 </form>
 {% endblock %}
