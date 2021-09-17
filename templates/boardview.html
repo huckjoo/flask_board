@@ -1,0 +1,14 @@
+{% extends "layout.html" %} {% block body %}
+<table>
+  <th>제목</th>
+  <th>내용</th>
+  <th>작성자</th>
+  {% for board in board_components %}
+  <tr>
+    <td>{{board["title"]}}</td>
+    <td>{{board["description"]}}</td>
+    <td>{{board["writer"]}}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
